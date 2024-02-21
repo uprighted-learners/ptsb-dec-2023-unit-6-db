@@ -11,17 +11,23 @@ Click the Create Cluster button to initiate the cluster creation process.
 
 ## Step 3: Configure Cluster Settings
 Set up authentication by creating a MongoDB user with a username and password. MongoDB can autogenerate a secure password for you, make sure you copy the password for later use
-In the Connection Security section, configure your IP Whitelist settings to allow connections from your application servers. You can add your IP address or specify a range. 
+
+In the Connection Security section, configure your IP Whitelist settings to allow connections from your application servers. You can add your IP address or specify a range. It should give you the option to add "My Ip Address" by default.
+
+
+In Connection Security section, MongoDB should have a listing of "My IP Address". Ensure that this is listed. If it is not listed, you can google your IP address and add it with a descriptive name. 
+
+If you are using a VPN, you may have to add the IP address 0.0.0.0/0 , however, it is crucial to note that this setting grants access to any IP address, and as a best practice, this configuration should not be employed in production-level applications due to security considerations.
+
 ## Step 4: Connect to Your Cluster
 After configuring the cluster settings, click on the Connect button again.
 Choose the Connect Your Application option.
 Copy the connection string provided. This string contains the necessary information to connect your application to the MongoDB Atlas cluster.
+
 ## Step 5: Connect Your Application
-
-
 In Compass, we will use the same connection string to view our database. In New Connection, paste your connection string and click `Save & Connect` to get started with the lab!
 
-### Example connection string 
+### Example connection string `
 `mongodb+srv://<username>:<password>@<clustername>.mongodb.net/<dbname>`
 
 (replace `<username>`, `<password>`, and `<clustername>` with your actual credentials)
