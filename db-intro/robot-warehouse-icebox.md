@@ -12,9 +12,6 @@ Click the Create Cluster button to initiate the cluster creation process.
 ## Step 3: Configure Cluster Settings
 Set up authentication by creating a MongoDB user with a username and password. MongoDB can autogenerate a secure password for you, make sure you copy the password for later use
 
-In the Connection Security section, configure your IP Whitelist settings to allow connections from your application servers. You can add your IP address or specify a range. It should give you the option to add "My Ip Address" by default.
-
-
 In Connection Security section, MongoDB should have a listing of "My IP Address". Ensure that this is listed. If it is not listed, you can google your IP address and add it with a descriptive name. 
 
 If you are using a VPN, you may have to add the IP address 0.0.0.0/0 , however, it is crucial to note that this setting grants access to any IP address, and as a best practice, this configuration should not be employed in production-level applications due to security considerations.
