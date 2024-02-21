@@ -28,9 +28,3 @@ In Compass, we will use the same connection string to view our database. In New 
 `mongodb+srv://<username>:<password>@<clustername>.mongodb.net/<dbname>`
 
 (replace `<username>`, `<password>`, and `<clustername>` with your actual credentials)
-
-
-## Creating the Warehouse in MongoDB Compass
-At the bottom of the grey sidebar, there will be a + button to create a database. In the pop-up form, enter the database name as "warehouse" and the collection name as "robots" and create the database.
-
-In the sidebar, you should now see the warehouse database with the robots collection within it.
