@@ -8,6 +8,7 @@ const User = new mongoose.Schema(
             maxLength: 70
         },
         email: {
+            // TODO: add uniqueness constraint
             type: String,
             required: true
         },
